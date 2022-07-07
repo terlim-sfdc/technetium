@@ -167,7 +167,7 @@
 <?php
 
     $db = pg_connect("host=ec2-23-23-151-191.compute-1.amazonaws.com port=5432 dbname=df8gd2jv8ub2pb user=wslqvajembykux password=df764afa69c2a4037e8f79444c6732ec3219059fa3197fbd60a4dc90bc797850");
-    $query = "insert into production.warranty_registration__c (name, email__c, date_of_purchase__c, phonebrandmodel__c, serial__c) VALUES ('$_POST[name]','$_POST[email]',
+    $query = "insert into production.warranty_registration__c (name__c, email__c, dateofpurchase__c, phonebrandmodel__c, serial__c) VALUES ('$_POST[name]','$_POST[email]',
     '$_POST[datepurchased]', '$_POST[phonebrandmodel]', '$_POST[serial]')";
     $result = pg_query($query); 
 
