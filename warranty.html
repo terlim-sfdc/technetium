@@ -55,10 +55,10 @@
                   <li class=""><a href="about.html">About</a></li>
                   <!-- <li class=""><a href="blog.html">Blog</a></li>
 						  <li class=""><a href="detail.html">Detail</a></li> -->
-                  <li class="active">
+                  <li>
                     <a class="connect" href="contact.html">Contact Us</a>
                   </li>
-                  <li>
+                  <li class="active">
                     <a class="connect" href="warranty.html"
                       >Warranty Registration</a
                     >
@@ -86,13 +86,13 @@
       </div>
     </section>
 
-    <section id="about" class="clearfix con_bg">
+    <section id="about" class="clearfix detail_bg">
       <div class="about_bg clearfix">
         <div class="container">
           <div class="row">
             <div class="about clearfix">
-              <h2>Con<span class="abort">ta</span>ct Us</h2>
-              <p><a href="index.html">Home</a> / Contact Us</p>
+              <h2>Register<span class="abort"> your</span> Warranty</h2>
+              <p><a href="index.html">Home</a> / Warranty Res</p>
             </div>
           </div>
         </div>
@@ -105,7 +105,7 @@
           <div class="col-sm-12 contact clearfix">
             <div class="col-sm-4 contact_left clearfix">
               <div class="col-sm-12 contact_left_top clearfix">
-                <h3>Adipiscing elit</h3>
+                <h3>Your benefits</h3>
                 <div class="col-sm-2 contact_left_top_left clearfix">
                   <div class="contact_left_top_left_1 clearfix">
                     <p><i class="fa fa-users"></i></p>
@@ -113,12 +113,10 @@
                 </div>
                 <div class="col-sm-10 contact_left_top_right clearfix">
                   <div class="contact_left_top_right_1 clearfix">
-                    <h4>Litora Torquent</h4>
+                    <h4>1 year on-site support</h4>
                     <h5>
-                      <span class="brand">Address brand:</span> 20 Mauris massa,
-                      Conubia Nostra.Tel: 65 3285 998
+                      <span class="brand">Get up to 1 year on-site support
                     </h5>
-                    <h5><span class="brand">Mail:</span> Info@gmail.com</h5>
                   </div>
                 </div>
               </div>
@@ -130,12 +128,11 @@
                 </div>
                 <div class="col-sm-10 contact_left_top_right clearfix">
                   <div class="contact_left_top_right_1 clearfix">
-                    <h4>Litora Torquent</h4>
+                    <h4>Community Forums</h4>
                     <h5>
-                      <span class="brand">Address brand:</span> 20 Mauris massa,
-                      Conubia Nostra.Tel: 65 3285 998
+                      <span class="brand">Have a burning question? Someone might already have the answer!
+                        Get access to our community forums upon registration.
                     </h5>
-                    <h5><span class="brand">Mail:</span> Info@gmail.com</h5>
                   </div>
                 </div>
               </div>
@@ -147,71 +144,77 @@
                 </div>
                 <div class="col-sm-10 contact_left_top_right clearfix">
                   <div class="contact_left_top_right_1 clearfix">
-                    <h4>Litora Torquent</h4>
+                    <h4>Phone Support</h4>
                     <h5>
-                      <span class="brand">Address brand:</span> 20 Mauris massa,
-                      Conubia Nostra.Tel: 65 3285 998
+                      <span class="brand">24 hour phone support as a member
                     </h5>
-                    <h5><span class="brand">Mail:</span> Info@gmail.com</h5>
+                    <h5><span class="brand">Phone:</span> +63-2-8123-4567</h5>
                   </div>
                 </div>
               </div>
             </div>
             <div class="col-sm-8 contact_right clearfix">
               <div class="col-sm-12 contact_right_1 clearfix">
-                <h5>Name*</h5>
-                <input
-                  class="form-control form-control_1"
-                  id="name"
-                  name="name"
-                  placeholder=""
-                  type="text"
-                  required=""
-                  autofocus=""
-                />
-                <h5>Email*</h5>
-                <input
-                  class="form-control form-control_1"
-                  id="name"
-                  name="name"
-                  placeholder=""
-                  type="text"
-                  required=""
-                  autofocus=""
-                />
-                <h5>Subject*</h5>
-                <input
-                  class="form-control form-control_1"
-                  id="name"
-                  name="name"
-                  placeholder=""
-                  type="text"
-                  required=""
-                  autofocus=""
-                />
-                <h5>Massage*</h5>
-                <textarea
-                  id="edit-submitted-your-message"
-                  name="submitted[your_message]"
-                  cols="60"
-                  placeholder=""
-                  rows="5"
-                  class="form-textarea form-textarea_new"
-                  style="color: grey"
-                ></textarea>
-                <p><a href="#">SUBMIT</a></p>
+                <form
+                  name="simcardregistration"
+                  action="warranty-submitted.php"
+                  method="POST"
+                >
+                  <h5>Name*</h5>
+                  <input
+                    class="form-control form-control_1"
+                    id="name"
+                    name="name"
+                    placeholder=""
+                    type="text"
+                    required=""
+                    autofocus=""
+                  />
+                  <h5>Email*</h5>
+                  <input
+                    class="form-control form-control_1"
+                    id="name"
+                    name="email"
+                    placeholder=""
+                    type="text"
+                    required=""
+                    autofocus=""
+                  />
+                  <h5>Date of Purchase*</h5>
+                  <input
+                    class="form-control form-control_1"
+                    id="name"
+                    name="datepurchased"
+                    placeholder=""
+                    type="date"
+                    required=""
+                    autofocus=""
+                  />
+                  <h5>Phone Brand & Model*</h5>
+                  <input
+                    class="form-control form-control_1"
+                    id="name"
+                    name="phonebrandmodel"
+                    placeholder=""
+                    type="text"
+                    required=""
+                    autofocus=""
+                  />
+                  <h5>Serial Number*</h5>
+                  <input
+                    class="form-control form-control_1"
+                    id="name"
+                    name="serial"
+                    placeholder=""
+                    type="text"
+                    required=""
+                    autofocus=""
+                  />
+
+                  <p><input type="submit" value="Submit" /></p>
+                </form>
               </div>
             </div>
-          </div>
-          <div class="contact_n col-sm-12 clearfix">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15308.450106572938!2d120.97150259462332!3d14.59005777378858!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397ca16780c9ebd%3A0xcd430ec6788bb043!2sFort%20Santiago!5e0!3m2!1sen!2ssg!4v1657190337021!5m2!1sen!2ssg"
-              width="100%"
-              height="350px"
-              frameborder="0"
-              style="border: 0"
-              allowfullscreen=""
-            ></iframe>
           </div>
         </div>
       </div>

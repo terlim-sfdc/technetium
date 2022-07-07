@@ -55,10 +55,10 @@
                   <li class=""><a href="about.html">About</a></li>
                   <!-- <li class=""><a href="blog.html">Blog</a></li>
 						  <li class=""><a href="detail.html">Detail</a></li> -->
-                  <li class="active">
+                  <li>
                     <a class="connect" href="contact.html">Contact Us</a>
                   </li>
-                  <li>
+                  <li class="active">
                     <a class="connect" href="warranty.html"
                       >Warranty Registration</a
                     >
@@ -86,12 +86,12 @@
       </div>
     </section>
 
-    <section id="about" class="clearfix con_bg">
+    <section id="about" class="clearfix detail_bg">
       <div class="about_bg clearfix">
         <div class="container">
           <div class="row">
             <div class="about clearfix">
-              <h2>Con<span class="abort">ta</span>ct Us</h2>
+              <h2>Register<span class="abort"> your</span> Warranty</h2>
               <p><a href="index.html">Home</a> / Contact Us</p>
             </div>
           </div>
@@ -100,121 +100,7 @@
     </section>
 
     <section id="contact" class="clearfix">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12 contact clearfix">
-            <div class="col-sm-4 contact_left clearfix">
-              <div class="col-sm-12 contact_left_top clearfix">
-                <h3>Adipiscing elit</h3>
-                <div class="col-sm-2 contact_left_top_left clearfix">
-                  <div class="contact_left_top_left_1 clearfix">
-                    <p><i class="fa fa-users"></i></p>
-                  </div>
-                </div>
-                <div class="col-sm-10 contact_left_top_right clearfix">
-                  <div class="contact_left_top_right_1 clearfix">
-                    <h4>Litora Torquent</h4>
-                    <h5>
-                      <span class="brand">Address brand:</span> 20 Mauris massa,
-                      Conubia Nostra.Tel: 65 3285 998
-                    </h5>
-                    <h5><span class="brand">Mail:</span> Info@gmail.com</h5>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-12 contact_left_top clearfix">
-                <div class="col-sm-2 contact_left_top_left clearfix">
-                  <div class="contact_left_top_left_1 clearfix">
-                    <p><i class="fa fa-question"></i></p>
-                  </div>
-                </div>
-                <div class="col-sm-10 contact_left_top_right clearfix">
-                  <div class="contact_left_top_right_1 clearfix">
-                    <h4>Litora Torquent</h4>
-                    <h5>
-                      <span class="brand">Address brand:</span> 20 Mauris massa,
-                      Conubia Nostra.Tel: 65 3285 998
-                    </h5>
-                    <h5><span class="brand">Mail:</span> Info@gmail.com</h5>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-12 contact_left_top clearfix">
-                <div class="col-sm-2 contact_left_top_left clearfix">
-                  <div class="contact_left_top_left_1 clearfix">
-                    <p><i class="fa fa-phone"></i></p>
-                  </div>
-                </div>
-                <div class="col-sm-10 contact_left_top_right clearfix">
-                  <div class="contact_left_top_right_1 clearfix">
-                    <h4>Litora Torquent</h4>
-                    <h5>
-                      <span class="brand">Address brand:</span> 20 Mauris massa,
-                      Conubia Nostra.Tel: 65 3285 998
-                    </h5>
-                    <h5><span class="brand">Mail:</span> Info@gmail.com</h5>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-8 contact_right clearfix">
-              <div class="col-sm-12 contact_right_1 clearfix">
-                <h5>Name*</h5>
-                <input
-                  class="form-control form-control_1"
-                  id="name"
-                  name="name"
-                  placeholder=""
-                  type="text"
-                  required=""
-                  autofocus=""
-                />
-                <h5>Email*</h5>
-                <input
-                  class="form-control form-control_1"
-                  id="name"
-                  name="name"
-                  placeholder=""
-                  type="text"
-                  required=""
-                  autofocus=""
-                />
-                <h5>Subject*</h5>
-                <input
-                  class="form-control form-control_1"
-                  id="name"
-                  name="name"
-                  placeholder=""
-                  type="text"
-                  required=""
-                  autofocus=""
-                />
-                <h5>Massage*</h5>
-                <textarea
-                  id="edit-submitted-your-message"
-                  name="submitted[your_message]"
-                  cols="60"
-                  placeholder=""
-                  rows="5"
-                  class="form-textarea form-textarea_new"
-                  style="color: grey"
-                ></textarea>
-                <p><a href="#">SUBMIT</a></p>
-              </div>
-            </div>
-          </div>
-          <div class="contact_n col-sm-12 clearfix">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15308.450106572938!2d120.97150259462332!3d14.59005777378858!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397ca16780c9ebd%3A0xcd430ec6788bb043!2sFort%20Santiago!5e0!3m2!1sen!2ssg!4v1657190337021!5m2!1sen!2ssg"
-              width="100%"
-              height="350px"
-              frameborder="0"
-              style="border: 0"
-              allowfullscreen=""
-            ></iframe>
-          </div>
-        </div>
-      </div>
+          <h3><center>Thank you for your registration! Your warranty details have been registered.</center></h5>
     </section>
 
     <section id="footer" class="clearfix">
@@ -277,3 +163,12 @@
     <script src="js/cbpAnimatedHeader.js"></script>
   </body>
 </html>
+
+<?php
+
+    $db = pg_connect("host=ec2-23-23-151-191.compute-1.amazonaws.com port=5432 dbname=df8gd2jv8ub2pb user=wslqvajembykux password=df764afa69c2a4037e8f79444c6732ec3219059fa3197fbd60a4dc90bc797850");
+    $query = "insert into production.warranty_registration__c (name, email__c, date_of_purchase__c, phonebrandmodel__c, serial__c) VALUES ('$_POST[name]','$_POST[email]',
+    '$_POST[datepurchased]', '$_POST[phonebrandmodel]', '$_POST[serial]')";
+    $result = pg_query($query); 
+
+?>
