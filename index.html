@@ -3,7 +3,10 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1"
+    />
     <title>Technetium</title>
     <link href="css/bootstrap.min.css" rel="stylesheet" />
     <link href="css/style.css" rel="stylesheet" />
@@ -53,11 +56,10 @@
                   <li class="active"><a href="index.html">Home</a></li>
                   <li><a href="about.html">About</a></li>
                   <li><a class="connect" href="contact.html">Contact Us</a></li>
-                  <li>
-                    <a class="connect" href="warranty.html"
-                      >Register your phone</a
-                    >
-                  </li>
+                  <!-- <li>
+                    <a class="connect" href="warranty.html">Warranty Form New</a>
+                  </li> -->
+
                   <!-- <li class="dropdown">
 							<a class="dropdown-toggle" data-toggle="dropdown" href="blog.html" aria-expanded="false">Dropdown
 							<span class="caret"></span></a>
@@ -103,10 +105,7 @@
             <div class="col-sm-6 center_1_right clearfix">
               <div class="center_1_right_inner">
                 <h4><span class="wellcome">01.</span> PHONES</h4>
-                <h2>
-                  Choose from a myriad<br />
-                  choice of design & colours<br />
-                </h2>
+                <h2>Choose your favourite color<br /></h2>
                 <h5>
                   Class aptent taciti sociosqu ad litora torquent per
                   conubia-<br />per inceptos C. Curabitursodales ligula in
@@ -891,5 +890,31 @@
     </script>
     <script src="js/classie.js"></script>
     <script src="js/cbpAnimatedHeader.js"></script>
+
+    <!-- MIAW Code -->
+    <script type="text/javascript">
+      function initEmbeddedMessaging() {
+        try {
+          embeddedservice_bootstrap.settings.language = "en-US"; // For example, enter 'en' or 'en-US'
+
+          embeddedservice_bootstrap.init(
+            "00D5i00000Ad5IB",
+            "SDO_Messaging_for_Web",
+            "https://terencelim-220822-863-demo.my.salesforce.com",
+            {
+              scrt2URL:
+                "https://terencelim-220822-863-demo.my.salesforce-scrt.com",
+            }
+          );
+        } catch (err) {
+          console.error("Error loading Embedded Messaging: ", err);
+        }
+      }
+    </script>
+    <script
+      type="text/javascript"
+      src="https://service.force.com/embeddedservice/asyncclient/bootstrap.min.js"
+      onload="initEmbeddedMessaging()"
+    ></script>
   </body>
 </html>
